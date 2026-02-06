@@ -11,7 +11,9 @@
 		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
 		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
 		<warmupSound>AnomalyAbilityWarmup</warmupSound>
-        <hostile>false</hostile>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <hostile>true</hostile>
         <verbProperties>
             <verbClass>Verb_CastAbility</verbClass>
 			<drawAimPie>false</drawAimPie>
