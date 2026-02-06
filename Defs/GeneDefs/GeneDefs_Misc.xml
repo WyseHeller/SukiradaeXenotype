@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>WH_SukiradaeButchery</defName>
+		<label>sweetbread</label>
+		<description>Carriers of this gene produce twisted meat.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeMeat</iconPath>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>EBSG_MeatReplacer</li>
+			<li>Flesh</li>
+			<li>Meat</li>
+			<li>AG_Meat</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="EBSGFramework.ButcherProductExtension">
+				<meatReplacement>Meat_Twisted</meatReplacement>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeLeather</defName>
+		<label>birdskin</label>
+		<description>Carriers of this gene produce bird leather.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeLeather</iconPath>
+		<displayOrderInCategory>1000</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<exclusionTags>
+			<li>EBSG_LeatherReplacer</li>
+			<li>Leather</li>
+			<li>Leathers</li>
+			<li>AG_Leather</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="EBSGFramework.ButcherProductExtension">
+				<leatherReplacement>Leather_Bird</leatherReplacement>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>WH_SukiradaeHands</defName>
+		<label>hand talons</label>
+		<description>Carriers of this gene have hands which resemble bird talons. This reduces their ability to manipulate objects.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeHands</iconPath>
+		<displayOrderInCategory>330</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.8</postFactor>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+					<li>
+						<hediff>WH_SukiradaeHands</hediff>
+						<bodyParts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyParts>
+						<onlyIfNew>true</onlyIfNew>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>WH_SukiradaeFangs</defName>
+		<label>fangs</label>
+		<description>Carriers of this gene have sharp teeth and long fangs.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeFangs</iconPath>
+		<displayOrderInCategory>320</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<statFactors>
+            <EatingSpeed>1.50</EatingSpeed>
+        </statFactors>
+		<exclusionTags>
+			<li>EBSG_EatingSpeed</li>
+			<li>Teeth</li>
+			<li>Fang</li>
+			<li>Fangs</li>
+			<li>AG_Fangs</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+					<li>
+						<hediff>WH_SukiradaeFangs</hediff>
+						<bodyParts>
+							<li>Jaw</li>
+						</bodyParts>
+						<onlyIfNew>true</onlyIfNew>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeEyes</defName>
+		<label>farsighted</label>
+		<description>Carriers of this gene have a brain that is wired to see at greater distances by utilizing some of the portions normally dedicated to hearing. Their shooting accuracy at long ranges is increased.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeEyes</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>0</biostatMet>
+		<statFactors>
+			<ShootingAccuracyFactor_Long>1.50</ShootingAccuracyFactor_Long>
+			<ShootingAccuracyFactor_Medium>1.25</ShootingAccuracyFactor_Medium>
+			<ShootingAccuracyFactor_Short>0.75</ShootingAccuracyFactor_Short>
+			<ShootingAccuracyFactor_Touch>0.50</ShootingAccuracyFactor_Touch>
+		</statFactors>
+		<capMods>
+			<li>
+				<capacity>Hearing</capacity>
+				<postFactor>0.85</postFactor>
+			</li>
+		</capMods>
+		<exclusionTags>
+			<li>ShootingAccuracy</li>
+		</exclusionTags>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeStomach</defName>
+		<label>saprovore digestion</label>
+		<description>Carriers of this gene have extremely strong stomach acid and will never suffer from food poisoning even after eating rotten food. They also don't mind the taste of raw food at all.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeStomach</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>-3</biostatMet>
+		<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+		<dontMindRawFood>true</dontMindRawFood>
+		<!-- does NOT grant bonus nutrition -->
+		<exclusionTags>
+			<li>EBSG_StrongStomachs</li>
+		</exclusionTags>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>hardeater</symbol></li>
+				<li><symbol>muncher</symbol></li>
+				<li><symbol>grubber</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>dura</symbol></li>
+				<li><symbol>eat</symbol></li>
+				<li><symbol>feed</symbol></li>
+				<li><symbol>cram</symbol></li>
+				<li><symbol>raw</symbol></li>
+				<li><symbol>quad</symbol></li>
+				<li><symbol>moo</symbol></li>
+				<li><symbol>raw</symbol></li>
+				<li><symbol>munch</symbol></li>
+				<li><symbol>cow</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>eater</symbol></li>
+				<li><symbol>mouth</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>munch</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<!-- add ability to eat corpses for nutrition -->
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeLovin</defName>
+		<label>aggressive lovin</label>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeLovin</iconPath>
+		<description>Carriers of this gene have an unusual method of showing affection, for better or for worse.</description>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>50</displayOrderInCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>1</biostatMet>
+		<modExtensions>
+			<li Class="EBSGFramework.PostLovinThingsExtension">
+				<partnerHasNoneOf>
+					<li>WH_SukiradaeLovin</li>
+				</partnerHasNoneOf>
+				<damageToPartner>Blunt</damageToPartner>
+				<damageAmount>4</damageAmount>
+				<partnerBodyParts>
+					<li>Pelvis</li>
+					<li>Neck</li>
+				</partnerBodyParts>
+				<partnerDamageChance>0.8</partnerDamageChance>
+				<partnerMemory>WH_GotSukiradaeLovin</partnerMemory>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeReproduction</defName>
+		<label>genetic pearls</label>
+		<description>Carriers of this gene must implant their genetic material within the body of another being to reproduce.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeReproduction</iconPath>
+		<displayCategory>Reproduction</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>3</biostatMet>
+		<exclusionTags>
+			<li>EBSG_PregnancyReplacer</li>
+			<li>Egglaying</li>
+			<li>AG_Egglaying</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="EBSGFramework.PregnancyReplacerExtension">
+				<replacementHediffs>
+					<li>WH_SukiradaePregnancy</li>
+					<li>EBSG_BriefSterility</li>
+				</replacementHediffs>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

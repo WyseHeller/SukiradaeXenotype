@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>NamerPersonSukiradae</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>Element->Words/Nouns/WH_Elements</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[Element] [Letter][maybe_letter]-[Digit][maybe_digit]</li>
+				<li>r_name->[AdjectiveAny] [NounName][maybe_plural]</li>
+				<li>r_name->[firstName] '[Color]' [lastName]</li>
+				
+				<li>maybe_letter(p=3)-></li>
+				<li>maybe_letter->[Letter]</li>
+				
+				<li>maybe_digit(p=6)-></li>
+				<li>maybe_digit->[Digit]</li>
+				
+				<li>maybe_plural(p=5)-></li>
+				<li>maybe_plural->s</li>
+				
+				<li>nounName->[Vegetable]</li>
+				<li>nounName->[Animal]</li>
+				<li>nounName->[Bodyparts]</li>
+				<li>nounName->[TerrainFeature]</li>
+				<li>nounName->[NaturalObject]</li>
+				
+				<li>firstName(p=2)->[Element]</li>
+				<li>firstName->[nounName]</li>
+				
+				<li>lastName->[PersonJob]</li>
+				<li>lastName->[Game]</li>
+				<li>lastName->[PersonBadass]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

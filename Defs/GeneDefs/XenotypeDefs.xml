@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeIconDef>
+		<defName>WH_Sukiradae</defName>
+		<texPath>UI/Icons/Xenotypes/WH_Sukiradae</texPath>
+	</XenotypeIconDef>
+	<XenotypeDef>
+		<defName>WH_Sukiradae</defName>
+		<label>sukiradae</label>
+		<description>A demonic humanoid with a animalistic qualities.</description>
+		<descriptionShort>a sukiradae.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/WH_Sukiradae</iconPath>
+		<inheritable>true</inheritable>
+		<nameMaker>NamerPersonSukiradae</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<genes>
+			<li>WH_SukiradaeBody</li>
+			<li>WH_SukiradaeHorns</li>
+			<li>WH_SukiradaeTail</li>
+			<li>Hair_BaldOnly</li>
+			<li>Beard_NoBeardOnly</li>
+			<li>Hair_Gray</li>
+			<li>Hair_DarkBlack</li>
+			<li>Hair_MidBlack</li>
+			<li>Hair_DarkReddish</li>
+			<li>Hair_DarkSaturatedReddish</li>
+			<li>Hair_DarkBrown</li>
+			<li>Hair_ReddishBrown</li>
+			<li>Hair_BrightRed</li>
+			<li>Skin_InkBlack</li>
+			<li>Skin_SlateGray</li>
+			<li>Skin_LightGray</li>
+			<li>Skin_SheerWhite</li>
+			<!-- Misc -->
+			<li>WH_SukiradaeButchery</li>
+			<li>WH_SukiradaeLeather</li>
+			<li>WH_SukiradaeHands</li>
+			<li>WH_SukiradaeFangs</li>
+			<li>WH_SukiradaeEyes</li>
+			<li>WH_SukiradaeStomach</li>
+			<li>WH_SukiradaeLovin</li>
+			<li>WH_SukiradaeReproduction</li>
+			<li>NakedSpeed</li>
+			<li>Libido_High</li>
+			<li>Aggression_Aggressive</li>
+			<!-- Skills -->
+			<li>AptitudeTerrible_Social</li>
+			<li>AptitudeStrong_Animals</li>
+			<li>AptitudeStrong_Cooking</li>
+			<li>AptitudeRemarkable_Plants</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

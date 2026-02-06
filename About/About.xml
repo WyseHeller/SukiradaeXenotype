@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Sukiradae Xenotype Mod</name>
+	<author>wyseheller</author>
+	<packageId>wyseheller.Sukiradae</packageId>
+	<supportedVersions><li>1.6</li></supportedVersions>
+	<description>Provides an additional xenotype for Rimworld Biotech DLC utilizing Vanilla Framework Expanded and EBSG Framework.</description>
+	<modDependencies>
+		<li>
+			<packageId>EBSG.Framework</packageId>
+			<displayName>EBSG Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3112549163</steamWorkshopUrl>
+			<downloadUrl>https://github.com/KonradHeinser/EBSGFramework</downloadUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>EBSG.Framework</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+	</loadAfter>
+</ModMetaData>
