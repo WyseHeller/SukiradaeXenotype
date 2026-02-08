@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.0125</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="CannibalPirate"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="CannibalPirate"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.025</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="TribeCannibal"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.025</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="NudistTribe"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="NudistTribe"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.025</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.0125</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
+			<value>
+				<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech">0.0125</WH_Sukiradae>
+			</value>
+		</match>
+	</Operation>
+</Patch>
