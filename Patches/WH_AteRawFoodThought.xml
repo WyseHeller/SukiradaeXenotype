@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName = "AteRawFood"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteRawFood"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">WH_SukiradaeStomach</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName = "AteCorpse"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteCorpse"]</xpath>
+			<value>
+				<nullifyingGenes />
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName = "AteCorpse"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteCorpse"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">WH_SukiradaeStomach</li>
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName = "AteRottenFood"]</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteRottenFood"]</xpath>
+			<value>
+				<nullifyingGenes />
+			</value>
+		</match>
+	</Operation>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName = "AteRottenFood"]/nullifyingGenes</xpath>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName = "AteRottenFood"]/nullifyingGenes</xpath>
+			<value>
+				<li MayRequire="Ludeon.RimWorld.Biotech">WH_SukiradaeStomach</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
