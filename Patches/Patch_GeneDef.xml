@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>Alpha Genes</li>
+		</mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeTail"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_Cosmetic_Tails</displayCategory>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeHorns"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_Cosmetic_Horns</displayCategory>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeBody"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_Cosmetic_Bodies</displayCategory>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeButchery"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_MeatType</displayCategory>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeLeather"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_LeatherType</displayCategory>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/GeneDef[defName="WH_SukiradaeStomach"]</xpath>
+				<value>
+					<displayCategory Operation="AddOrReplace">AG_FoodConsumption</displayCategory>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

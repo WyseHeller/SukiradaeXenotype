@@ -27,6 +27,8 @@
 			<li>Hair_DarkBrown</li>
 			<li>Hair_ReddishBrown</li>
 			<li>Hair_BrightRed</li>
+			<li>Skin_Melanin8</li>
+			<li>Skin_Melanin9</li>
 			<li>Skin_InkBlack</li>
 			<li>Skin_SlateGray</li>
 			<li>Skin_LightGray</li>
@@ -48,6 +50,7 @@
 			<li>AptitudeStrong_Animals</li>
 			<li>AptitudeStrong_Cooking</li>
 			<li>AptitudeRemarkable_Plants</li>
+			<!-- Mods -->
 		</genes>
 	</XenotypeDef>
 </Defs>

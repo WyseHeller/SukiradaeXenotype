@@ -4,7 +4,7 @@
 		<defName>WH_SukiradaeButchery</defName>
 		<label>sweetbread</label>
 		<description>Carriers of this gene produce twisted meat.</description>
-		<iconPath>UI/Icons/Genes/WH_SukiradaeMeat</iconPath>
+		<iconPath>Things/Item/Resource/TwistedMeat/TwistedMeat_c</iconPath>
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
@@ -24,7 +24,8 @@
 		<defName>WH_SukiradaeLeather</defName>
 		<label>birdskin</label>
 		<description>Carriers of this gene produce bird leather.</description>
-		<iconPath>UI/Icons/Genes/WH_SukiradaeLeather</iconPath>
+		<iconPath>Things/Item/Resource/Leather/Leather_b</iconPath>
+		<iconColor>(76,83,99)</iconColor>
 		<displayOrderInCategory>1000</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>0</biostatMet>
@@ -69,7 +70,7 @@
 			</li>
 		</modExtensions>
 	</GeneDef>
-	<GeneDef ParentName="GeneHandsBase">
+	<GeneDef>
 		<defName>WH_SukiradaeFangs</defName>
 		<label>fangs</label>
 		<description>Carriers of this gene have sharp teeth and long fangs.</description>
@@ -86,6 +87,7 @@
 			<li>Fang</li>
 			<li>Fangs</li>
 			<li>AG_Fangs</li>
+			<li>AG_TeethStrength</li>
 		</exclusionTags>
 		<modExtensions>
 			<li Class="EBSGFramework.EBSGExtension">
@@ -137,6 +139,7 @@
 		<biostatMet>-3</biostatMet>
 		<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 		<dontMindRawFood>true</dontMindRawFood>
+		<addictionChanceFactor>0</addictionChanceFactor>
 		<!-- does NOT grant bonus nutrition -->
 		<exclusionTags>
 			<li>EBSG_StrongStomachs</li>
@@ -173,7 +176,7 @@
 		<label>aggressive lovin</label>
 		<iconPath>UI/Icons/Genes/WH_SukiradaeLovin</iconPath>
 		<description>Carriers of this gene have an unusual method of showing affection, for better or for worse.</description>
-		<displayCategory>Miscellaneous</displayCategory>
+		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>50</displayOrderInCategory>
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>1</biostatMet>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/FactionDef[defName="TribeSavage"]</xpath>
+		<value>
+			<xenotypeSet Operation="Safe">
+				<xenotypeChances Operation="Safe">
+					<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+		<value>
+			<xenotypeSet Operation="Safe">
+				<xenotypeChances Operation="Safe">
+					<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="Beggars"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="TribeCannibal"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="NudistTribe"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="CannibalPirate"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="Pilgrims"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods>
+			<li>Vanilla Xenotypes Improved</li>
+		</mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/FactionDef[defName="MulticulturalPirates"]</xpath>
+				<value>
+					<xenotypeSet Operation="Safe">
+						<xenotypeChances Operation="Safe">
+							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+						</xenotypeChances>
+					</xenotypeSet>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>
