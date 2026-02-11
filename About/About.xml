@@ -4,7 +4,7 @@
 	<author>wyseheller</author>
 	<packageId>wyseheller.Sukiradae</packageId>
 	<supportedVersions><li>1.6</li></supportedVersions>
-	<description>Provides an additional xenotype for Rimworld Biotech DLC utilizing Vanilla Framework Expanded and EBSG Framework.</description>
+	<description>Provides an additional xenotype for Rimworld Biotech DLC utilizing the EBSG Framework.</description>
 	<modDependencies>
 		<li>
 			<packageId>EBSG.Framework</packageId>
@@ -25,5 +25,7 @@
 		<li>imranfish.xmlextensions</li>
 		<li>LovelyDovey.Sex.WithRosaline</li>
 		<li>Koth.InclusiveSkinTones</li>
+		<li>lts.GEG</li>
+		<li>Turnovus.Biotech.IntegratedGenes</li>
 	</loadAfter>
 </ModMetaData>

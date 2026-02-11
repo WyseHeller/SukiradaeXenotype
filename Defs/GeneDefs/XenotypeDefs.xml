@@ -26,7 +26,6 @@
 			<li>Hair_DarkSaturatedReddish</li>
 			<li>Hair_DarkBrown</li>
 			<li>Hair_ReddishBrown</li>
-			<li>Hair_BrightRed</li>
 			<li>Skin_Melanin8</li>
 			<li>Skin_Melanin9</li>
 			<li>Skin_InkBlack</li>
@@ -43,13 +42,14 @@
 			<li>WH_SukiradaeLovin</li>
 			<li>WH_SukiradaeReproduction</li>
 			<li>NakedSpeed</li>
-			<li>Libido_High</li>
 			<li>Aggression_Aggressive</li>
+			<li>Beauty_Ugly</li>
+			<li>WoundHealing_Fast</li>
 			<!-- Skills -->
-			<li>AptitudeTerrible_Social</li>
+			<li>AptitudePoor_Social</li>
 			<li>AptitudeStrong_Animals</li>
 			<li>AptitudeStrong_Cooking</li>
-			<li>AptitudeRemarkable_Plants</li>
+			<li>AptitudeStrong_Plants</li>
 			<!-- Mods -->
 		</genes>
 	</XenotypeDef>

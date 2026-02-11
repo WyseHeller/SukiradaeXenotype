@@ -16,7 +16,6 @@
 			<li>Fur</li>
 		</exclusionTags>
 		<fur>WH_SukiradaeBody</fur>
-		<bodyType>Standard</bodyType>
 		<skinIsHairColor>true</skinIsHairColor>
 		<tattoosVisible>false</tattoosVisible>
 		<renderNodeProperties>

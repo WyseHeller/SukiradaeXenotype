@@ -1,38 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Patch>
+	<!-- Core -->
 	<Operation Class="XmlExtensions.HybridPatch">
 		<xpath>Defs/FactionDef[defName="TribeSavage"]</xpath>
 		<value>
 			<xenotypeSet Operation="Safe">
 				<xenotypeChances Operation="Safe">
-					<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 				</xenotypeChances>
 			</xenotypeSet>
 		</value>
 	</Operation>
 	<Operation Class="XmlExtensions.HybridPatch">
-		<xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+		<xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
-			<xenotypeSet Operation="Safe">
-				<xenotypeChances Operation="Safe">
-					<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
-				</xenotypeChances>
-			</xenotypeSet>
+			<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 		</value>
 	</Operation>
+	
+	<!-- DLC -->
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/PawnKindDef[@Name="HoraxianBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/PawnKindDef[@Name="MutantBase"]/xenotypeSet/xenotypeChances</xpath>
+		<value>
+			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae>
+		</value>
+	</Operation>
+	
 	<Operation Class="XmlExtensions.FindMod">
-		<mods>
-			<li>Ideology</li>
-		</mods>
+		<mods><li>Ideology</li></mods>
 		<caseTrue>
 			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="Beggars"]</xpath>
+				<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<xenotypeSet Operation="Safe">
-						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
-						</xenotypeChances>
-					</xenotypeSet>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 				</value>
 			</Operation>
 			<Operation Class="XmlExtensions.HybridPatch">
@@ -40,7 +46,7 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -50,7 +56,7 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -60,36 +66,28 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
 			</Operation>
 			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="Pilgrims"]</xpath>
+				<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<xenotypeSet Operation="Safe">
-						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.0125</WH_Sukiradae>
-						</xenotypeChances>
-					</xenotypeSet>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 				</value>
 			</Operation>
 		</caseTrue>
 	</Operation>
+	
+	<!-- Mods -->
 	<Operation Class="XmlExtensions.FindMod">
-		<mods>
-			<li>Vanilla Xenotypes Improved</li>
-		</mods>
+		<mods><li>Vanilla Xenotypes Improved</li></mods>
 		<caseTrue>
 			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="MulticulturalPirates"]</xpath>
+				<xpath>Defs/FactionDef[defName="MulticulturalPirates"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<xenotypeSet Operation="Safe">
-						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae MayRequire="Ludeon.RimWorld.Biotech" Operation="SafeAdd">0.025</WH_Sukiradae>
-						</xenotypeChances>
-					</xenotypeSet>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 				</value>
 			</Operation>
 		</caseTrue>
