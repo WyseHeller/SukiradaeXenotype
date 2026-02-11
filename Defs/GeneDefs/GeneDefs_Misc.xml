@@ -141,6 +141,9 @@
 		<dontMindRawFood>true</dontMindRawFood>
 		<addictionChanceFactor>0</addictionChanceFactor>
 		<!-- does NOT grant bonus nutrition -->
+		<forcedTraits>
+			<li><def>Cannibal</def></li>
+		</forcedTraits>
 		<exclusionTags>
 			<li>EBSG_StrongStomachs</li>
 		</exclusionTags>
