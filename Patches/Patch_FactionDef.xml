@@ -11,12 +11,6 @@
 			</xenotypeSet>
 		</value>
 	</Operation>
-	<Operation Class="XmlExtensions.HybridPatch">
-		<xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
-		<value>
-			<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
-		</value>
-	</Operation>
 	
 	<!-- DLC -->
 	<Operation Class="XmlExtensions.HybridPatch">
@@ -46,17 +40,7 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
-						</xenotypeChances>
-					</xenotypeSet>
-				</value>
-			</Operation>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="NudistTribe"]</xpath>
-				<value>
-					<xenotypeSet Operation="Safe">
-						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae>
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -69,25 +53,6 @@
 							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae>
 						</xenotypeChances>
 					</xenotypeSet>
-				</value>
-			</Operation>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="Pilgrims"]/xenotypeSet/xenotypeChances</xpath>
-				<value>
-					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
-				</value>
-			</Operation>
-		</caseTrue>
-	</Operation>
-	
-	<!-- Mods -->
-	<Operation Class="XmlExtensions.FindMod">
-		<mods><li>Vanilla Xenotypes Improved</li></mods>
-		<caseTrue>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/FactionDef[defName="MulticulturalPirates"]/xenotypeSet/xenotypeChances</xpath>
-				<value>
-					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
 				</value>
 			</Operation>
 		</caseTrue>

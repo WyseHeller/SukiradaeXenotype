@@ -24,7 +24,7 @@
 			</nullifyingGenes>
 		</value>
 	</Operation>
-	<Operation Class="XmlExtensions.HybridPatch" MayRequire="Ludeon.RimWorld.Anomaly">
+	<Operation Class="XmlExtensions.HybridPatch">
 		<xpath>/Defs/ThoughtDef[defName="AteTwistedMeat"]</xpath>
 		<value>
 			<nullifyingGenes Operation="Safe">

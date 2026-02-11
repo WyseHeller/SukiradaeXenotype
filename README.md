@@ -1,8 +1,14 @@
 # SukiradaeXenotype
 
-Adds 1 new Xenotype and 11(?ish) new Genes to Rimworld.
-
 <img src="https://github.com/WyseHeller/SukiradaeXenotype/blob/main/About/Preview.png" width=522 height=294>
+
+Compatibility
+<ul>
+  <li>Ideology - Patches Xenotype into Cannibal Factions as a rare spawn.</li>
+  <li>Alpha Genes - Patches Xenotype to use better, more fully-featured Alpha Genes over mine.</li>
+  <li>Intimacy - Patches Xenotype to spawn as Aphrodor. Possible incompatibility between Intimacy and EBSG Framework regarding reproduction.</li>
+  <li>Glowing Eye Genes - Patches Xenotype to use glowing purple eyes.</li>
+</ul>
 
 Requirements
 <ul>

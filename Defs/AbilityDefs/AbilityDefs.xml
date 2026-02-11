@@ -8,9 +8,9 @@
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <cooldownTicksRange>3600000</cooldownTicksRange>
 		<showPsycastEffects>false</showPsycastEffects>
-		<warmupMote MayRequire="Ludeon.RimWorld.Anomaly">Mote_HoraxSmallSpellWarmup</warmupMote>
-		<warmupEffecter MayRequire="Ludeon.RimWorld.Anomaly">HoraxianAbilityCasting</warmupEffecter>
-		<warmupSound MayRequire="Ludeon.RimWorld.Anomaly">AnomalyAbilityWarmup</warmupSound>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
 		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
 		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
         <hostile>true</hostile>
@@ -34,7 +34,7 @@
 				<staticXenotype>WH_Sukiradae</staticXenotype>
                 <targetEffect>Vanish</targetEffect>
                 <developmentalStage>Baby</developmentalStage>
-                <filthOnCompletion MayRequire="Ludeon.RimWorld.Anomaly">Filth_TwistedFlesh</filthOnCompletion>
+                <filthOnCompletion>Filth_TwistedFlesh</filthOnCompletion>
                 <filthPerSpawn>12~15</filthPerSpawn>
 				<noGear>true</noGear>
             </li>
