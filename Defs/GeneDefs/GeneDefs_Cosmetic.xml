@@ -4,9 +4,10 @@
 		<defName>WH_SukiradaeBody</defName>
 		<label>piñiatafur</label>
 		<labelShortAdj>piñiatafurred</labelShortAdj>
-		<description>Carriers of this gene have stubby feathers covering their entire body.</description>
+		<description>Carriers of this gene have stubby little feathers covering their corrupted bodies. This provides some resistance to the heat, but also lets in the cold.</description>
 		<iconPath>UI/Icons/Genes/WH_SukiradaeBody</iconPath>
-		<displayOrderInCategory>100</displayOrderInCategory>
+		<displayCategory>Miscellaneous</displayCategory> <!-- Furskin (Miscellaneous) -->
+		<displayOrderInCategory>401</displayOrderInCategory> <!-- Furskin (400) -->
 		<biostatCpx>1</biostatCpx>
 		<biostatMet>-1</biostatMet>
 		<exclusionTags>
@@ -14,6 +15,14 @@
 			<li>Bodies</li>
 			<li>Body</li>
 			<li>Fur</li>
+			<li>EBSG_MeatReplacer</li>
+			<li>Flesh</li>
+			<li>Meat</li>
+			<li>AG_Meat</li>
+			<li>EBSG_LeatherReplacer</li>
+			<li>Leather</li>
+			<li>Leathers</li>
+			<li>AG_Leather</li>
 		</exclusionTags>
 		<fur>WH_SukiradaeBody</fur>
 		<skinIsHairColor>true</skinIsHairColor>
@@ -32,19 +41,32 @@
 			<ComfyTemperatureMin>5</ComfyTemperatureMin>
 			<ComfyTemperatureMax>20</ComfyTemperatureMax>
 		</statOffsets>
+		<modExtensions>
+			<li Class="EBSGFramework.ButcherProductExtension">
+				<meatReplacement>Meat_Twisted</meatReplacement>
+				<leatherReplacement>Leather_Bird</leatherReplacement>
+			</li>
+			<li Class="VEF.Genes.GeneExtension">
+				<defsTreatedAsHumanMeat>
+					<li>Meat_Twisted</li>
+				</defsTreatedAsHumanMeat>
+				<defsTreatedAsHumanLeather>
+					<li>Leather_Bird</li>
+				</defsTreatedAsHumanLeather>
+			</li>
+		</modExtensions>
 	</GeneDef>
 	<GeneDef ParentName="GeneHeadboneBase">
-		<defName>WH_SukiradaeHorns</defName>
+		<defName>WH_StraightHorns</defName>
 		<label>straight-horns</label>
 		<description>Carriers of this gene grow two straight horns protruding from the forehead.</description>
-		<iconPath>UI/Icons/Genes/WH_SukiradaeHorns</iconPath>
-		<biostatCpx>0</biostatCpx>
-		<biostatMet>0</biostatMet>
+		<iconPath>UI/Icons/Genes/WH_StraightHorns</iconPath>
+		<displayOrderInCategory>111</displayOrderInCategory> <!-- Mini-Horns (110) -->
 		<renderNodeProperties>
 			<li>
 				<nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
 				<workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
-				<texPath>Things/Pawn/Humanlike/HeadAttachments/WH_SukiradaeHorns/SukiradaeHorns</texPath>
+				<texPath>Things/Pawn/Humanlike/HeadAttachments/WH_StraightHorns/StraightHorns</texPath>
 				<parentTagDef>Head</parentTagDef>
 				<drawData>
 				<defaultData>
@@ -75,16 +97,19 @@
 		</symbolPack>
 	</GeneDef>
 	<GeneDef ParentName="GeneTailBase">
-		<defName>WH_SukiradaeTail</defName>
+		<defName>WH_CurledTail</defName>
 		<label>curled tail</label>
 		<description>Carriers of this gene grow a slender, curled tail.</description>
-		<iconPath>UI/Icons/Genes/WH_SukiradaeTail</iconPath>
+		<iconPath>UI/Icons/Genes/WH_CurledTail</iconPath>
+		<iconColor>(0.75, 0.75, 0.75)</iconColor>
+		<displayCategory>Miscellaneous</displayCategory> <!-- SmoothTail (Miscellaneous) -->
+		<displayOrderInCategory>1001</displayOrderInCategory> <!-- SmoothTail (1000) -->
 		<biostatCpx>0</biostatCpx>
 		<biostatMet>0</biostatMet>
 		<renderNodeProperties>
 			<li>
 				<workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
-				<texPath>Things/Pawn/Humanlike/BodyAttachments/WH_SukiradaeTail/SukiradaeTail</texPath>
+				<texPath>Things/Pawn/Humanlike/BodyAttachments/WH_CurledTail/CurledTail</texPath>
 				<colorType>Skin</colorType>
 				<overrideMeshSize>(1, 1)</overrideMeshSize>
 				<parentTagDef>Body</parentTagDef>

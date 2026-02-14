@@ -16,19 +16,7 @@
 				<value><displayCategory Operation="AddOrReplace">AG_Cosmetic_Bodies</displayCategory></value>
 			</Operation>
 			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/GeneDef[defName="WH_SukiradaeButchery"]</xpath>
-				<value><displayCategory Operation="AddOrReplace">AG_MeatType</displayCategory></value>
-			</Operation>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/GeneDef[defName="WH_SukiradaeLeather"]</xpath>
-				<value><displayCategory Operation="AddOrReplace">AG_LeatherType</displayCategory></value>
-			</Operation>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/GeneDef[defName="WH_SukiradaeStomach"]</xpath>
-				<value><displayCategory Operation="AddOrReplace">AG_FoodConsumption</displayCategory></value>
-			</Operation>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/GeneDef[defName="WH_SukiradaeFangs"]</xpath>
+				<xpath>Defs/GeneDef[defName="WH_Saprovore"]</xpath>
 				<value><displayCategory Operation="AddOrReplace">AG_FoodConsumption</displayCategory></value>
 			</Operation>
 		</caseTrue>

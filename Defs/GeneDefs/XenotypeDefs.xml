@@ -15,8 +15,8 @@
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
 			<li>WH_SukiradaeBody</li>
-			<li>WH_SukiradaeHorns</li>
-			<li>WH_SukiradaeTail</li>
+			<li>WH_StraightHorns</li>
+			<li>WH_CurledTail</li>
 			<li>Hair_BaldOnly</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Hair_Gray</li>
@@ -33,13 +33,9 @@
 			<li>Skin_LightGray</li>
 			<li>Skin_SheerWhite</li>
 			<!-- Misc -->
-			<li>WH_SukiradaeButchery</li>
-			<li>WH_SukiradaeLeather</li>
-			<li>WH_SukiradaeHands</li>
-			<li>WH_SukiradaeFangs</li>
-			<li>WH_SukiradaeEyes</li>
-			<li>WH_SukiradaeStomach</li>
-			<li>WH_SukiradaeLovin</li>
+			<li>WH_HandTalons</li>
+			<li>WH_Farsighted</li>
+			<li>WH_Saprovore</li>
 			<li>WH_SukiradaeReproduction</li>
 			<li>NakedSpeed</li>
 			<li>Aggression_Aggressive</li>

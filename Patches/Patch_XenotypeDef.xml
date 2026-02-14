@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Patch>
+	<!-- Gene Swap -->
 	<Operation Class="XmlExtensions.FindMod">
 		<mods><li>Alpha Genes</li></mods>
 		<caseTrue>
@@ -8,23 +9,24 @@
 				<value>
 					<li Operation="Add">AG_UnsettlingAppearance</li>
 					<li Operation="Remove" Compare="InnerText">Beauty_Ugly</li>
-					<li Operation="Add">AG_TwistedFlesh</li>
-					<li Operation="Remove" Compare="InnerText">WH_SukiradaeButchery</li>
 				</value>
 			</Operation>
 		</caseTrue>
 	</Operation>
 	<Operation Class="XmlExtensions.FindMod">
-		<mods><li>Intimacy - Gender Works</li></mods>
+		<mods><li>Integrated Genes</li></mods>
 		<caseTrue>
 			<Operation Class="XmlExtensions.HybridPatch">
 				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
 				<value>
-					<li Operation="Add">SEX_AlwaysAphrodor</li>
+					<li Operation="Add">Turn_Gene_FleshbeastRegeneration</li>
+					<li Operation="Remove" Compare="InnerText">WoundHealing_Fast</li>
 				</value>
 			</Operation>
 		</caseTrue>
 	</Operation>
+	
+	<!-- Gene Additions -->
 	<Operation Class="XmlExtensions.FindMod">
 		<mods><li>Inclusive Skin Tones 1.6</li></mods>
 		<caseTrue>
@@ -62,20 +64,8 @@
 			<Operation Class="XmlExtensions.HybridPatch">
 				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
 				<value>
-					<li Operation="Add">Gene_Necropaths</li>
+					<li Operation="Add">Gene_Skipmaster</li>
 					<li Operation="Add">Gene_Harmonist</li>
-				</value>
-			</Operation>
-		</caseTrue>
-	</Operation>
-	<Operation Class="XmlExtensions.FindMod">
-		<mods><li>Integrated Genes</li></mods>
-		<caseTrue>
-			<Operation Class="XmlExtensions.HybridPatch">
-				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
-				<value>
-					<li Operation="Add">Turn_Gene_FleshbeastRegeneration</li>
-					<li Operation="Remove" Compare="InnerText">WoundHealing_Fast</li>
 				</value>
 			</Operation>
 		</caseTrue>

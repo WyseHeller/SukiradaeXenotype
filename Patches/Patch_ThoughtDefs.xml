@@ -4,7 +4,7 @@
 		<xpath>/Defs/ThoughtDef[defName="AteRawFood"]</xpath>
 		<value>
 			<nullifyingGenes Operation="Safe">
-				<li Operation="Add">WH_SukiradaeStomach</li>
+				<li Operation="Add">WH_Saprovore</li>
 			</nullifyingGenes>
 		</value>
 	</Operation>
@@ -12,7 +12,7 @@
 		<xpath>/Defs/ThoughtDef[defName="AteCorpse"]</xpath>
 		<value>
 			<nullifyingGenes Operation="Safe">
-				<li Operation="Add">WH_SukiradaeStomach</li>
+				<li Operation="Add">WH_Saprovore</li>
 			</nullifyingGenes>
 		</value>
 	</Operation>
@@ -20,7 +20,7 @@
 		<xpath>/Defs/ThoughtDef[defName="AteRottenFood"]</xpath>
 		<value>
 			<nullifyingGenes Operation="Safe">
-				<li Operation="Add">WH_SukiradaeStomach</li>
+				<li Operation="Add">WH_Saprovore</li>
 			</nullifyingGenes>
 		</value>
 	</Operation>
@@ -28,7 +28,7 @@
 		<xpath>/Defs/ThoughtDef[defName="AteTwistedMeat"]</xpath>
 		<value>
 			<nullifyingGenes Operation="Safe">
-				<li Operation="Add">WH_SukiradaeStomach</li>
+				<li Operation="Add">WH_Saprovore</li>
 			</nullifyingGenes>
 		</value>
 	</Operation>

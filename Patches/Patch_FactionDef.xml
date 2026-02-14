@@ -6,7 +6,7 @@
 		<value>
 			<xenotypeSet Operation="Safe">
 				<xenotypeChances Operation="Safe">
-					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae> <!-- 0.25x Default Xenotype Spawn Rate (0.05) -->
 				</xenotypeChances>
 			</xenotypeSet>
 		</value>
@@ -16,13 +16,13 @@
 	<Operation Class="XmlExtensions.HybridPatch">
 		<xpath>Defs/PawnKindDef[@Name="HoraxianBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
-			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae>
+			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae> <!-- 1x Default Xenotype Spawn Rate (0.05) -->
 		</value>
 	</Operation>
 	<Operation Class="XmlExtensions.HybridPatch">
 		<xpath>Defs/PawnKindDef[@Name="MutantBase"]/xenotypeSet/xenotypeChances</xpath>
 		<value>
-			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae>
+			<WH_Sukiradae Operation="Add">0.05</WH_Sukiradae> <!-- 1x Default Xenotype Spawn Rate (0.05) -->
 		</value>
 	</Operation>
 	
@@ -32,7 +32,7 @@
 			<Operation Class="XmlExtensions.HybridPatch">
 				<xpath>Defs/FactionDef[defName="Beggars"]/xenotypeSet/xenotypeChances</xpath>
 				<value>
-					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae>
+					<WH_Sukiradae Operation="Add">0.0125</WH_Sukiradae> <!-- 0.25x Default Xenotype Spawn Rate (0.05) -->
 				</value>
 			</Operation>
 			<Operation Class="XmlExtensions.HybridPatch">
@@ -40,7 +40,7 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae> <!-- 0.5x Default Xenotype Spawn Rate (0.05) -->
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>
@@ -50,7 +50,7 @@
 				<value>
 					<xenotypeSet Operation="Safe">
 						<xenotypeChances Operation="Safe">
-							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae>
+							<WH_Sukiradae Operation="Add">0.025</WH_Sukiradae> <!-- 0.5x Default Xenotype Spawn Rate (0.05) -->
 						</xenotypeChances>
 					</xenotypeSet>
 				</value>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <AbilityDef>
-        <defName>WH_SukiradaeReproduce</defName>
+        <defName>WH_ImplantGeneticPearl</defName>
         <label>implant genetic pearl</label>
         <description>Implants a gestated pearl of genetic code into the body of another, creating a new sukiradae.</description>
-        <iconPath>UI/Icons/Genes/WH_SukiradaeReproduction</iconPath>
+        <iconPath>UI/Icons/Abilities/WH_ImplantGeneticPearl</iconPath>
         <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
         <cooldownTicksRange>3600000</cooldownTicksRange>
 		<showPsycastEffects>false</showPsycastEffects>

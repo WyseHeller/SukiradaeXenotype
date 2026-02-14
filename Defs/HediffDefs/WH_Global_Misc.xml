@@ -16,7 +16,7 @@
 			</li>
 			<li>
 				<minSeverity>0.999</minSeverity>
-				<label>fully formed</label>
+				<label>implantable</label>
 			</li>
 		</stages>
 		<comps>
@@ -26,7 +26,7 @@
 			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
 				<abilitiesAtSeverities>
 					<li>
-						<abilityDef>WH_SukiradaeReproduce</abilityDef>
+						<abilityDef>WH_ImplantGeneticPearl</abilityDef>
 						<validSeverity>0.999</validSeverity>
 					</li>
 				</abilitiesAtSeverities>
