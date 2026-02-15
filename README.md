@@ -1,6 +1,6 @@
 # SukiradaeXenotype
 
-<img src="https://github.com/WyseHeller/SukiradaeXenotype/blob/main/About/Preview.png" width=522 height=294>
+<img src="https://github.com/WyseHeller/SukiradaeXenotype/blob/main/About/Preview.png">
 
 Compatibility
 <ul>
