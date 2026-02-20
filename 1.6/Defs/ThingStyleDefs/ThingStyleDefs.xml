@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingStyleDef>
+		<defName>WH_Poncho</defName>
+		<wornGraphicPath>Things/Pawn/Humanlike/Apparel/WH_Poncho/Poncho</wornGraphicPath>
+		<graphicData>
+			<texPath>Things/Pawn/Humanlike/Apparel/WH_Poncho/Poncho</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+</Defs>

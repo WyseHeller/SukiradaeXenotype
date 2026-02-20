@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="TribalBase" Name="WH_SukiradaeBase" Abstract="True">
+		<defaultFactionDef>WH_SukiradaeTribe</defaultFactionDef>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<apparelRequired>
+			<li>Apparel_WarMask</li>
+		</apparelRequired>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<techHediffsTags>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsMoney>200~800</techHediffsMoney>
+		<techHediffsChance>0.08</techHediffsChance>
+	</PawnKindDef>
+
+	<!-- Poverty Tier -->
+	
+	<PawnKindDef ParentName="WH_SukiradaeBase" Name="WH_SukiradaePovertyTierBase" Abstract="True">
+		<combatPower>40</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+		</weaponTags>
+		<weaponMoney>100~200</weaponMoney> <!-- Knife {Steel~Obsidian} $64~$160 -->
+		<apparelMoney>200~650</apparelMoney> <!-- Full Outfit $155~$601 -->
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaePovertyTierBase">
+		<defName>WH_Sukiradae_Villager</defName>
+		<label>villager</label>
+		<isFighter>false</isFighter>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaePovertyTierBase">
+		<defName>WH_Sukiradae_Porter</defName>
+		<label>slave</label>
+		<isFighter>true</isFighter>
+		<apparelRequired>
+			<li MayRequire="Ludeon.Rimworld.Ideology">Apparel_Collar</li>
+		</apparelRequired>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	<!-- Low Tier -->
+	
+	<PawnKindDef ParentName="WH_SukiradaePovertyTierBase" Name="WH_SukiradaeLowTierBase" Abstract="True">
+		<isFighter>true</isFighter>
+		<maxGenerationAge>20</maxGenerationAge>
+		<gearHealthRange>0.5~1.8</gearHealthRange>
+		<weaponTags Inherit="False"/>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<inventoryOptions>
+			<skipChance>0.80</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineHerbal</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>17~27</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeLowTierBase">
+		<defName>WH_Sukiradae_Fighter</defName>
+		<label>fighter</label>
+		<combatPower>50</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<weaponTags>
+			<li>NeolithicMeleeBasic</li>
+			<li>NeolithicMeleeDecent</li>
+		</weaponTags>
+		<weaponMoney>150~300</weaponMoney> <!-- Club/Ikwa {Obsidian} $205/$275 -->
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeLowTierBase">
+		<defName>WH_Sukiradae_Archer</defName>
+		<label>archer</label>
+		<combatPower>45</combatPower>
+		<weaponTags>
+			<li>NeolithicRangedBasic</li>
+			<li>NeolithicRangedDecent</li>
+			<li>NeolithicRangedHeavy</li>
+		</weaponTags>
+		<weaponMoney>50~150</weaponMoney> <!-- Short Bow/Pila $45/$109 -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+	</PawnKindDef>
+	
+	<!-- Mid Tier -->
+	
+	<PawnKindDef ParentName="WH_SukiradaeLowTierBase" Name="WH_SukiradaeMidTierBase" Abstract="True">
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>65</maxGenerationAge>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeMidTierBase">
+		<defName>WH_Sukiradae_Warrior</defName>
+		<label>warrior</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<weaponTags>
+			<li>Spear</li>
+		</weaponTags>
+		<weaponMoney>200~880</weaponMoney> <!-- Spear {Steel~Plasteel} $186~$770 -->
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>5~9</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeMidTierBase">
+		<defName>WH_Sukiradae_Militia</defName>
+		<label>militia</label>
+		<combatPower>75</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelColor>(129, 97, 60)</apparelColor> <!-- Coyote Brown -->
+		<weaponTags>
+			<li>Gun</li>
+		</weaponTags>
+		<weaponMoney>255~255</weaponMoney> <!-- Pump Action Shotgun & Bolt-Action Rifle $255 -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>10~16</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- High Tier -->
+	
+	<PawnKindDef ParentName="WH_SukiradaeMidTierBase" Name="WH_SukiradaeHighTierBase" Abstract="True">
+		<itemQuality>Normal</itemQuality>
+		<weaponMoney>300~550</weaponMoney> <!-- Plasteel Knife $285 ~ Plasteel Axe $505 -->
+		<apparelTags>
+			<li>IndustrialMilitaryBasic</li>
+			<li>Cape</li>
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>Apparel_CowboyHat</li>
+		</apparelRequired>
+		<apparelMoney>750~1500</apparelMoney> <!-- Full Outfit $602~$1470 -->
+		<inventoryOptions>
+			<skipChance>0.90</skipChance>
+			<subOptionsChooseOne>
+				<li>
+					<thingDef>MedicineIndustrial</thingDef>
+					<countRange>1</countRange>
+				</li>
+			</subOptionsChooseOne>
+		</inventoryOptions>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeHighTierBase">
+		<defName>WH_Sukiradae_HeadHunter</defName>
+		<label>headhunter</label>
+		<combatPower>65</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<apparelColor>(74, 74, 74)</apparelColor> <!-- Charcoal -->
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li MayRequire="Ludeon.Rimworld.Royalty">Axe</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+		<initialResistanceRange>13~20</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="WH_SukiradaeHighTierBase">
+		<defName>WH_Sukiradae_Ranger</defName>
+		<label>ranger</label>
+		<combatPower>75</combatPower>
+		<apparelColor>(95, 91, 80)</apparelColor> <!-- Ranger Green -->
+		<weaponTags>
+			<li>AssaultRifle</li>
+		</weaponTags>
+		<weaponMoney>480~480</weaponMoney> <!-- Assault Rifle $480 -->
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~10</range>
+			</li>
+		</skills>
+		<initialResistanceRange>14~22</initialResistanceRange>
+	</PawnKindDef>
+	
+	<!-- Leader Tier -->
+	
+	<PawnKindDef ParentName="WH_SukiradaeHighTierBase">
+		<defName>WH_Sukiradae_Warlord</defName>
+		<label>warlord</label>
+		<labelFemale>matriarch</labelFemale>
+		<factionLeader>true</factionLeader>
+		<minGenerationAge>30</minGenerationAge>
+		<maxGenerationAge>99</maxGenerationAge>
+		<combatPower>85</combatPower>
+		<apparelColor>(215, 0, 64)</apparelColor> <!-- Carmine -->
+		<itemQuality>Good</itemQuality>
+		<weaponTags>
+			<li>LongSword</li>
+		</weaponTags>
+		<weaponMoney>1050~1050</weaponMoney> <!-- Plasteel Longsword $1045 -->
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>8~13</range>
+			</li>
+		</skills>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>16~26</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

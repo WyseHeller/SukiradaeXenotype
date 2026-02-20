@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>NamerPersonSukiradae</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>Element->Words/Nouns/WH_Elements</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[firstName] [surName]</li>
+				<li>r_name->[firstName] '[nickName]' [surName]</li>
+				
+				<li>alphaNumeric->One</li>
+				<li>alphaNumeric->Two</li>
+				<li>alphaNumeric->Three</li>
+				<li>alphaNumeric->Four</li>
+				<li>alphaNumeric->Five</li>
+				<li>alphaNumeric->Six</li>
+				<li>alphaNumeric->Seven</li>
+				<li>alphaNumeric->Eight</li>
+				<li>alphaNumeric->Nine</li>
+				<li>alphaNumeric->Ten</li>
+				<li>alphaNumeric->Eleven</li>
+				<li>alphaNumeric->Twelve</li>
+				<li>alphaNumeric->Thirteen</li>
+				<li>alphaNumeric->Fourteen</li>
+				<li>alphaNumeric->Fifteen</li>
+				<li>alphaNumeric->Sixty-Three</li>
+				<li>alphaNumeric->Ninety-Nine</li>
+				<li>alphaNumeric->Forty-Five</li>
+				<li>alphaNumeric->Sixty-Six</li>
+				<li>alphaNumeric->Twenty-Eight</li>
+				
+				<li>firstNamePrefix->Crazy</li>
+				<li>firstNamePrefix->Wild</li>
+				<li>firstNamePrefix->Smear</li>
+				<li>firstNamePrefix->Spoil</li>
+				<li>firstNamePrefix->Solo</li>
+				<li>firstNamePrefix->Imaginary</li>
+				<li>firstNamePrefix->Big</li>
+				
+				<li>maybeNumeric-></li>
+				<li>maybeNumeric->[alphaNumeric]</li>
+				
+				<li>maybePlural-></li>
+				<li>maybePlural->s</li>
+				
+				<li>maybeLetter-></li>
+				<li>maybeLtter->[Letter]</li>
+				
+				<li>maybeDigit-></li>
+				<li>maybeDigit->[Digit]</li>
+				
+				<li>firstName->[firstNamePrefix] [alphaNumeric][maybePlural]</li>
+				<li>firstName->[alphaNumeric][maybePlural]</li>
+				<li>firstName->[Element]</li>
+				
+				<li>nickName(p=3)->[Letter][maybeLetter]-[Digit][maybeDigit]</li>
+				<li>nickName(p=3)->[Color][maybePlural]</li>
+				<li>nickName->Blind</li>
+				<li>nickName->Gambler</li>
+				<li>nickName->Beater</li>
+				<li>nickName->Valet</li>
+				<li>nickName->Blank</li>
+				<li>nickName->Suit</li>
+				<li>nickName->Wild Card</li>
+				<li>nickName->Beater</li>
+				<li>nickName->Auction</li>
+				<li>nickName->Banker</li>
+				<li>nickName->Dealer</li>
+				<li>nickName->Croupier</li>
+				<li>nickName->Knocks</li>
+				<li>nickName->Joker</li>
+				<li>nickName->King</li>
+				<li>nickName->Queen</li>
+				<li>nickName->Knave</li>
+				<li>nickName->Diamonds</li>
+				<li>nickName->Clubs</li>
+				<li>nickName->Hearts</li>
+				<li>nickName->Flush</li>
+				<li>nickName->All-In</li>
+				<li>nickName->Stud</li>
+				<li>nickName->Rake</li>
+				<li>nickName->Lotto</li>
+				<li>nickName->Texas</li>
+				
+				<li>surName->Draw</li>
+				<li>surName->Card Draw</li>
+				<li>surName->Cards</li>
+				<li>surName->Devils</li>
+				<li>surName->Piles</li>
+				<li>surName->Corners</li>
+				<li>surName->Spades</li>
+				<li>surName->Aces</li>
+				<li>surName->Stops</li>
+				<li>surName->Lowball</li>
+				<li>surName->Studs</li>
+				<li>surName->Splits</li>
+				<li>surName->Solitaire</li>
+				<li>surName->Roulette</li>
+				<li>surName->Bingo</li>
+				<li>surName->Backdoor</li>
+				<li>surName->Baccarat</li>
+				<li>surName->Poker</li>
+				<li>surName->Squares</li>
+				<li>surName->Domino</li>
+				<li>surName->Hold'em</li>
+				<li>surName->Blackjack</li>
+				<li>surName->Backraise</li>
+				<li>surName->Blanks</li>
+				<li>surName->Couterstop</li>
+				<li>surName->Bridge</li>
+				<li>surName->Hocs</li>
+				<li>surName->Sharp</li>
+				<li>surName->House</li>
+				<li>surName->Pips</li>
+				<li>surName->Tops</li>
+				<li>surName->Dice</li>
+				<li>surName->Yacht</li>
+				<li>surName->Tables</li>
+				<li>surName->Chips</li>
+				<li>surName->Slots</li>
+				<li>surName->Pachinko</li>
+				<li>surName->Craps</li>
+				<li>surName->Golf</li>
+				<li>surName->Odd</li>
+				<li>surName->Even</li>
+				<li>surName->Heads</li>
+				<li>surName->Tails</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

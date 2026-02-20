@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<!-- Rimworld DLC -->
+		<li IfModActive="Ludeon.RimWorld.Ideology">1.6/Mods/Ideology</li>
+		<!-- Mods -->
+		<li IfModActive="sarg.alphagenes">1.6/Mods/Alpha Genes</li>
+	</v1.6>
+</loadFolders>

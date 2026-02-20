@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <AbilityDef>
+        <defName>WH_ImplantGeneticPearl</defName>
+        <label>implant genetic pearl</label>
+        <description>Implants a gestated pearl of genetic code into the body of another, creating a new sukiradae.</description>
+        <iconPath>UI/Icons/Abilities/WH_ImplantGeneticPearl</iconPath>
+        <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+        <cooldownTicksRange>3600000</cooldownTicksRange>
+		<showPsycastEffects>false</showPsycastEffects>
+		<warmupMote>Mote_HoraxSmallSpellWarmup</warmupMote>
+		<warmupEffecter>HoraxianAbilityCasting</warmupEffecter>
+		<warmupSound>AnomalyAbilityWarmup</warmupSound>
+		<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+		<disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+        <hostile>true</hostile>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+			<drawAimPie>false</drawAimPie>
+            <range>-1</range>
+            <warmupTime>2</warmupTime>
+			<requireLineOfSight>true</requireLineOfSight>
+			<drawHighlightWithLineOfSight>true</drawHighlightWithLineOfSight>
+            <targetParams>
+                <canTargetBuildings>false</canTargetBuildings>
+                <canTargetMechs>false</canTargetMechs>
+                <canTargetCorpses>true</canTargetCorpses>
+                <canTargetAnimals>false</canTargetAnimals>
+                <canTargetEntities>false</canTargetEntities>
+            </targetParams>
+        </verbProperties>
+        <comps>
+            <li Class="EBSGFramework.CompProperties_AbilitySpawnHumanlike">
+				<staticXenotype>WH_Sukiradae</staticXenotype>
+                <targetEffect>Vanish</targetEffect>
+                <developmentalStage>Baby</developmentalStage>
+                <filthOnCompletion>Filth_TwistedFlesh</filthOnCompletion>
+                <filthPerSpawn>12~15</filthPerSpawn>
+				<noGear>true</noGear>
+            </li>
+			<li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
+				<compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
+				<hediffs>
+					<li>WH_SukiradaePregnancy</li>
+				</hediffs>
+				<applyToSelf>true</applyToSelf>
+			</li>
+        </comps>
+    </AbilityDef>
+</Defs>

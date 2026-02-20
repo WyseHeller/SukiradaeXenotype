@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
+		<value>
+			<li Operation="Add">AG_UnsettlingAppearance</li>
+			<li Operation="Remove" Compare="InnerText">Beauty_Ugly</li>
+		</value>
+	</Operation>
+</Patch>

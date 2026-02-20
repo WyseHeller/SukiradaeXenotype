@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>WH_SukiradaePregnancy</defName>
+		<label>genetic pearl</label>
+		<labelNoun>genetic pearl</labelNoun>
+		<description>A small pearl of genetic material that gestates within a sukiradae mother.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(0.7,1.0,0.7)</defaultLabelColor>
+		<preventsPregnancy>true</preventsPregnancy>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>gestating</label>
+			</li>
+			<li>
+				<minSeverity>0.999</minSeverity>
+				<label>implantable</label>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>0.015</severityPerDay>
+            </li>
+			<li Class="EBSGFramework.HediffCompProperties_GiveAbilityAtSeverity">
+				<abilitiesAtSeverities>
+					<li>
+						<abilityDef>WH_ImplantGeneticPearl</abilityDef>
+						<validSeverity>0.999</validSeverity>
+					</li>
+				</abilitiesAtSeverities>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

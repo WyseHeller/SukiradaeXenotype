@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef ParentName="GeneHandsBase">
+		<defName>WH_HandTalons</defName>
+		<label>hand talons</label>
+		<description>Carriers of this gene have hands which resemble bird talons. This reduces their ability to manipulate objects.</description>
+		<iconPath>UI/Icons/Genes/WH_HandTalons</iconPath>
+		<displayOrderInCategory>321</displayOrderInCategory> <!-- Elongated Fingers (320) -->
+		<biostatCpx>1</biostatCpx> <!-- Elongated Fingers (1) -->
+		<biostatMet>-1</biostatMet> <!-- Elongated Fingers (-1) -->
+		<capMods>
+			<li>
+				<capacity>Manipulation</capacity>
+				<postFactor>0.90</postFactor> <!-- Trotter Hands (0.85) -->
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+					<li>
+						<hediff>WH_HandTalons</hediff>
+						<bodyParts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyParts>
+						<onlyIfNew>true</onlyIfNew>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_Farsighted</defName>
+		<label>farsighted</label>
+		<description>Carriers of this gene have a brain that is wired to see at greater distances by utilizing some of the portions normally dedicated to hearing. Their shooting accuracy at long ranges is increased.</description>
+		<iconPath>UI/Icons/Genes/WH_Farsighted</iconPath>
+		<displayCategory>Miscellaneous</displayCategory> <!-- Nearsighted (Miscellaneous) -->
+		<displayOrderInCategory>51</displayOrderInCategory> <!-- Nearsighted (50) -->
+		<biostatCpx>0</biostatCpx> <!-- Nearsighted (0) -->
+		<biostatMet>1</biostatMet> <!-- Nearsighted (2) -->
+		<statFactors>
+			<ShootingAccuracyFactor_Long>1.50</ShootingAccuracyFactor_Long> <!-- Nearsighted (0.25) -->
+			<ShootingAccuracyFactor_Medium>1.25</ShootingAccuracyFactor_Medium> <!-- Nearsighted (0.5) -->
+			<ShootingAccuracyFactor_Short>0.75</ShootingAccuracyFactor_Short>
+			<ShootingAccuracyFactor_Touch>0.50</ShootingAccuracyFactor_Touch>
+		</statFactors>
+		<capMods>
+			<li>
+				<capacity>Hearing</capacity>
+				<postFactor>0.85</postFactor>
+				<!-- increase sense of smell in RimScent -->
+			</li>
+		</capMods>
+		<exclusionTags>
+			<li>ShootingAccuracy</li>
+		</exclusionTags>
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_Saprovore</defName>
+		<label>saprovore digestion</label>
+		<description>Carriers of this gene have serrated teeth for cutting up flesh and strong stomach acid that neutralizes harmful bacteria. They will never suffer from food poisoning and don't mind the taste of raw food.</description>
+		<iconPath>UI/Icons/Genes/WH_Saprovore</iconPath>
+		<displayCategory>Miscellaneous</displayCategory> <!-- Robust Digestion (Miscellaneous) -->
+		<displayOrderInCategory>11</displayOrderInCategory> <!-- Robust Digestion (10) -->
+		<biostatCpx>3</biostatCpx> <!-- Robust Digestion (2) -->
+		<biostatMet>-3</biostatMet> <!-- Robust Digestion (-2) -->
+		<statFactors>
+            <EatingSpeed>1.25</EatingSpeed>
+        </statFactors>
+		<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+		<dontMindRawFood>true</dontMindRawFood>
+		<!-- does NOT grant bonus nutrition -->
+		<exclusionTags>
+			<li>EBSG_StrongStomachs</li>
+			<li>EBSG_EatingSpeed</li>
+			<li>Teeth</li>
+			<li>Fang</li>
+			<li>Fangs</li>
+			<li>AG_Fangs</li>
+			<li>AG_TeethStrength</li>
+		</exclusionTags>
+		<symbolPack>
+			<wholeNameSymbols>
+				<li><symbol>hardeater</symbol></li>
+				<li><symbol>muncher</symbol></li>
+				<li><symbol>grubber</symbol></li>
+			</wholeNameSymbols>
+			<prefixSymbols>
+				<li><symbol>dura</symbol></li>
+				<li><symbol>eat</symbol></li>
+				<li><symbol>feed</symbol></li>
+				<li><symbol>cram</symbol></li>
+				<li><symbol>raw</symbol></li>
+				<li><symbol>quad</symbol></li>
+				<li><symbol>moo</symbol></li>
+				<li><symbol>raw</symbol></li>
+				<li><symbol>munch</symbol></li>
+				<li><symbol>cow</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>eater</symbol></li>
+				<li><symbol>mouth</symbol></li>
+				<li><symbol>vore</symbol></li>
+				<li><symbol>munch</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="EBSGFramework.EBSGExtension">
+				<hediffsToApply>
+					<li>
+						<hediff>WH_SerratedTeeth</hediff>
+						<bodyParts>
+							<li>Jaw</li>
+						</bodyParts>
+						<onlyIfNew>true</onlyIfNew>
+					</li>
+				</hediffsToApply>
+			</li>
+		</modExtensions>
+		<!-- add ability to eat corpses for nutrition -->
+	</GeneDef>
+	<GeneDef>
+		<defName>WH_SukiradaeReproduction</defName>
+		<label>genetic pearls</label>
+		<description>Carriers of this gene have an aggressive method of copulation and must implant their genetic material within the body of another being to reproduce.</description>
+		<iconPath>UI/Icons/Genes/WH_SukiradaeReproduction</iconPath>
+		<displayCategory>Reproduction</displayCategory> <!-- Fertile (Reproduction) -->
+		<displayOrderInCategory>101</displayOrderInCategory> <!-- Fertile (100) -->
+		<biostatMet>1</biostatMet> <!-- Sterile (1) -->
+		<exclusionTags>
+			<li>EBSG_PregnancyReplacer</li>
+			<li>Egglaying</li>
+			<li>AG_Egglaying</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="EBSGFramework.PostLovinThingsExtension">
+				<partnerHasNoneOf>
+					<li>WH_SukiradaeReproduction</li>
+				</partnerHasNoneOf>
+				<damageToPartner>Blunt</damageToPartner>
+				<damageAmount>8</damageAmount>
+				<partnerBodyParts>
+					<li>Pelvis</li>
+					<li>Neck</li>
+				</partnerBodyParts>
+				<partnerDamageChance>0.8</partnerDamageChance>
+				<partnerMemory>WH_GotSukiradaeLovin</partnerMemory>
+			</li>
+			<li Class="EBSGFramework.PregnancyReplacerExtension">
+				<replacementHediffs>
+					<li>WH_SukiradaePregnancy</li>
+					<li>EBSG_BriefSterility</li>
+				</replacementHediffs>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

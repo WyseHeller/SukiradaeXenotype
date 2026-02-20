@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Gene Swap -->
+	<Operation Class="XmlExtensions.FindMod">
+		<mods><li>Integrated Genes</li></mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
+				<value>
+					<li Operation="Add">Turn_Gene_FleshbeastRegeneration</li>
+					<li Operation="Remove" Compare="InnerText">WoundHealing_Fast</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	
+	<!-- Gene Additions -->
+	<Operation Class="XmlExtensions.FindMod">
+		<mods><li>Inclusive Skin Tones 1.6</li></mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
+				<value>
+					<li Operation="Add">Skin_Melanin20</li>
+					<li Operation="Add">Skin_Melanin21</li>
+					<li Operation="Add">Skin_Melanin22</li>
+					<li Operation="Add">Skin_Melanin23</li>
+					<li Operation="Add">Skin_Melanin24</li>
+					<li Operation="Add">Skin_Melanin25</li>
+					<li Operation="Add">Skin_Melanin26</li>
+					<li Operation="Add">Skin_Melanin27</li>
+					<li Operation="Add">Skin_Melanin28</li>
+					<li Operation="Add">Skin_Melanin29</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods><li>Glowing eyes genes</li></mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
+				<value>
+					<li Operation="Add">GEG_Eyes_GlowingPurple</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+	<Operation Class="XmlExtensions.FindMod">
+		<mods><li>Vanilla Psycast Expanded - Biotech Integration</li></mods>
+		<caseTrue>
+			<Operation Class="XmlExtensions.HybridPatch">
+				<xpath>Defs/XenotypeDef[defName="WH_Sukiradae"]/genes</xpath>
+				<value>
+					<li Operation="Add">Gene_Skipmaster</li>
+					<li Operation="Add">Gene_Harmonist</li>
+				</value>
+			</Operation>
+		</caseTrue>
+	</Operation>
+</Patch>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>NamerFactionSukiradae</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>DesertLandform->Words/Nouns/WH_DesertLandforms</li>
+				<li>WesternNoun->Words/Nouns/WH_WesternNouns</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[adjName] [locationName] [groupName]</li>
+				<li>r_name->[WesternNoun] [locationName] [groupName]</li>
+				
+				<li>adjName->stormy</li>
+				<li>adjName->dust</li>
+				<li>adjName->dusty</li>
+				<li>adjName->sienna</li>
+				<li>adjName->sandy</li>
+				<li>adjName->scorched</li>
+				<li>adjName->scorching</li>
+				<li>adjName->desolate</li>
+				<li>adjName->abandoned</li>
+				<li>adjName->rusty red</li>
+				<li>adjName->rusted red</li>
+				<li>adjName->salty</li>
+				
+				<li>locationName->roadside</li>
+				<li>locationName->displaced</li>
+				<li>locationName->dust bowl</li>
+				<li>locationName->highway</li>
+				<li>locationName->[DesertLandform]</li>
+				
+				<li>groupName->raiders</li>
+				<li>groupName->burros</li>
+				<li>groupName->boomalopes</li>
+				<li>groupName->donkeys</li>
+				<li>groupName->varmints</li>
+				<li>groupName->bandits</li>
+				<li>groupName->grizzly bears</li>
+				<li>groupName->outlaws</li>
+				<li>groupName->bobcats</li>
+				<li>groupName->nomads</li>
+				<li>groupName->wranglers</li>
+				<li>groupName->scavengers</li>
+				<li>groupName->vultures</li>
+				<li>groupName->pumas</li>
+				<li>groupName->rattlesnakes</li>
+				<li>groupName->flock</li>
+				<li>groupName->banditos</li>
+				<li>groupName->coyotes</li>
+				<li>groupName->armadillos</li>
+				<li>groupName->wanderers</li>
+				<li>groupName->survivors</li>
+				<li>groupName->cazadores</li>
+				<li>groupName->refugees</li>
+				<li>groupName->travelers</li>
+				<li>groupName->wasters</li>
+				<li>groupName->trash</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>NamerSettlementSukiradae</defName>
+		<rulePack>
+			<rulesFiles>
+				<li>DesertLandform->Words/Nouns/WH_DesertLandforms</li>
+				<li>WesternNoun->Words/Nouns/WH_WesternNouns</li>
+			</rulesFiles>
+			<rulesStrings>
+				<li>r_name->[WesternNoun] [DesertLandform]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+</Defs>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>/Defs/ThoughtDef[defName="AteRawFood"]</xpath>
+		<value>
+			<nullifyingGenes Operation="Safe">
+				<li Operation="Add">WH_Saprovore</li>
+			</nullifyingGenes>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>/Defs/ThoughtDef[defName="AteCorpse"]</xpath>
+		<value>
+			<nullifyingGenes Operation="Safe">
+				<li Operation="Add">WH_Saprovore</li>
+			</nullifyingGenes>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>/Defs/ThoughtDef[defName="AteRottenFood"]</xpath>
+		<value>
+			<nullifyingGenes Operation="Safe">
+				<li Operation="Add">WH_Saprovore</li>
+			</nullifyingGenes>
+		</value>
+	</Operation>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>/Defs/ThoughtDef[defName="AteTwistedMeat"]</xpath>
+		<value>
+			<nullifyingGenes Operation="Safe">
+				<li Operation="Add">WH_Saprovore</li>
+			</nullifyingGenes>
+		</value>
+	</Operation>
+</Patch>

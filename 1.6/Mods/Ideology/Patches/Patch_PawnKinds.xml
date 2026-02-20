@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="XmlExtensions.HybridPatch">
+		<xpath>Defs/PawnKindDef[@Name="WH_SukiradaeBase"]/apparelRequired</xpath>
+		<value>
+			<li Operation="Remove" Compare="InnerText">Apparel_WarMask</li>
+			<li Operation="Add">Apparel_VisageMask</li>
+		</value>
+	</Operation>
+</Patch>
