@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<TattooDef>
+		<defName>WH_Body_Roulette</defName>
+		<label>roulette</label>
+		<texPath>Things/Pawn/Humanlike/Tattoos/WH_Roulette/Roulette</texPath>
+		<tattooType>Body</tattooType>
+		<category>Misc</category>
+		<visibleNorth>true</visibleNorth>
+		<styleTags>
+			<li>TattooBodyWestern</li>
+		</styleTags>
+	</TattooDef>
+</Defs>

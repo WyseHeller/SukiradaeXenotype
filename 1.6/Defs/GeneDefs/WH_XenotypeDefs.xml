@@ -11,7 +11,7 @@
 		<descriptionShort>a sukiradae.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/WH_Sukiradae</iconPath>
 		<inheritable>true</inheritable>
-		<nameMaker>NamerPersonSukiradae</nameMaker>
+		<nameMaker>WH_NamerPersonSukiradae</nameMaker>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		<genes>
 			<li>WH_SukiradaeBody</li>

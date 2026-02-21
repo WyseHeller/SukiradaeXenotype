@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<RulePackDef>
-		<defName>NamerFactionSukiradae</defName>
+		<defName>WH_NamerFactionSukiradae</defName>
 		<rulePack>
 			<rulesFiles>
-				<li>DesertLandform->Words/Nouns/WH_DesertLandforms</li>
-				<li>WesternNoun->Words/Nouns/WH_WesternNouns</li>
+				<li>WH_DesertLandform->Words/Nouns/WH_DesertLandforms</li>
+				<li>WH_WesternNoun->Words/Nouns/WH_WesternNouns</li>
 			</rulesFiles>
 			<rulesStrings>
 				<li>r_name->[adjName] [locationName] [groupName]</li>
-				<li>r_name->[WesternNoun] [locationName] [groupName]</li>
+				<li>r_name->[WH_WesternNoun] [locationName] [groupName]</li>
 				
 				<li>adjName->stormy</li>
 				<li>adjName->dust</li>
@@ -28,7 +28,7 @@
 				<li>locationName->displaced</li>
 				<li>locationName->dust bowl</li>
 				<li>locationName->highway</li>
-				<li>locationName->[DesertLandform]</li>
+				<li>locationName->[WH_DesertLandform]</li>
 				
 				<li>groupName->raiders</li>
 				<li>groupName->burros</li>
@@ -61,14 +61,14 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>NamerSettlementSukiradae</defName>
+		<defName>WH_NamerSettlementSukiradae</defName>
 		<rulePack>
 			<rulesFiles>
-				<li>DesertLandform->Words/Nouns/WH_DesertLandforms</li>
-				<li>WesternNoun->Words/Nouns/WH_WesternNouns</li>
+				<li>WH_DesertLandform->Words/Nouns/WH_DesertLandforms</li>
+				<li>WH_WesternNoun->Words/Nouns/WH_WesternNouns</li>
 			</rulesFiles>
 			<rulesStrings>
-				<li>r_name->[WesternNoun] [DesertLandform]</li>
+				<li>r_name->[WH_WesternNoun] [WH_DesertLandform]</li>
 			</rulesStrings>
 		</rulePack>
 	</RulePackDef>

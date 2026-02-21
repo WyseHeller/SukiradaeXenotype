@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<RulePackDef>
-		<defName>NamerPersonSukiradae</defName>
+		<defName>WH_NamerPersonSukiradae</defName>
 		<rulePack>
 			<rulesFiles>
-				<li>Element->Words/Nouns/WH_Elements</li>
+				<li>WH_Element->Words/Nouns/WH_Elements</li>
 			</rulesFiles>
 			<rulesStrings>
 				<li>r_name->[firstName] [surName]</li>
@@ -53,7 +53,7 @@
 				
 				<li>firstName->[firstNamePrefix] [alphaNumeric][maybePlural]</li>
 				<li>firstName->[alphaNumeric][maybePlural]</li>
-				<li>firstName->[Element]</li>
+				<li>firstName->[WH_Element]</li>
 				
 				<li>nickName(p=3)->[Letter][maybeLetter]-[Digit][maybeDigit]</li>
 				<li>nickName(p=3)->[Color][maybePlural]</li>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>WH_Western</defName>
+		<label>western</label>
+		<iconPath>UI/StyleCategories/WH_Western</iconPath>
+		<soundOngoingRitual>RitualSustainer_Rustic</soundOngoingRitual>
+		<ritualVisualEffectDef>Rustic</ritualVisualEffectDef>
+		<thingDefStyles>
+			<li>
+				<thingDef>Apparel_Cape</thingDef>
+				<styleDef>WH_Poncho</styleDef>
+			</li>
+		</thingDefStyles>
+	</StyleCategoryDef>
+</Defs>

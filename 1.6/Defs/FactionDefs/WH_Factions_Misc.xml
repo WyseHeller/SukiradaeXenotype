@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="TribeBase" Name="WH_SukiradaeFactionBase" Abstract="True">
+	<FactionDef ParentName="TribeRoughBase" Name="WH_SukiradaeFactionBase" Abstract="True">
 		<!-- Base -->
-		<factionNameMaker>NamerFactionSukiradae</factionNameMaker>
-		<settlementNameMaker>NamerSettlementSukiradae</settlementNameMaker>
-		<raidLootMaker>SukiradaeRaidLootMaker</raidLootMaker>
+		<factionNameMaker>WH_NamerFactionSukiradae</factionNameMaker>
+		<settlementNameMaker>WH_NamerSettlementSukiradae</settlementNameMaker>
+		<raidLootMaker>WH_SukiradaeRaidLootMaker</raidLootMaker>
 		<pawnSingular>sukiradae</pawnSingular>
 		<pawnsPlural>sukiradae</pawnsPlural>
 		<leaderTitle>warlord</leaderTitle>
 		<allowedArrivalTemperatureRange>10~60</allowedArrivalTemperatureRange>
+		<allowedCultures><li>WH_Western</li></allowedCultures>
 		
 		<!-- Pawn Types -->
 		<xenotypeSet Inherit="False">
@@ -36,12 +37,33 @@
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
+			
+			<li>Slavery_Classic</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Horrible</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Abhorrent</li>
+			
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Exalted</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Respected</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Approved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Standard</li>
 		</disallowedPrecepts>
 		
 		<!-- PawnGroupMakers -->
 		<fixedLeaderKinds Inherit="False">
 			<li>WH_Sukiradae_Warlord</li>
 		</fixedLeaderKinds>
+		<caravanTraderKinds Inherit="False">
+			<li>WH_Caravan_Sukiradae_Scavenger</li>
+			<li>WH_Caravan_Sukiradae_Homesteader</li>
+			<li>WH_Caravan_Sukiradae_Slaver</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds Inherit="False">
+			<li>WH_Visitor_Sukiradae_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds Inherit="False">
+			<li>WH_Base_Sukiradae_Standard</li>
+		</baseTraderKinds>
 		<pawnGroupMakers Inherit="False">
 			<!-- Raid Groups -->
 			<li>
@@ -105,35 +127,27 @@
 				<options>
 					<WH_Sukiradae_Villager>10</WH_Sukiradae_Villager>
 					<Tribal_Child MayRequire="Ludeon.RimWorld.Biotech">10</Tribal_Child>
-					<WH_Sukiradae_Porter>7</WH_Sukiradae_Porter>
-					<WH_Sukiradae_Fighter>6</WH_Sukiradae_Fighter>
-					<WH_Sukiradae_Archer>6</WH_Sukiradae_Archer>
-					<WH_Sukiradae_Warrior>5</WH_Sukiradae_Warrior>
-					<WH_Sukiradae_Militia>5</WH_Sukiradae_Militia>
-					<WH_Sukiradae_HeadHunter>0.25</WH_Sukiradae_HeadHunter>
-					<WH_Sukiradae_Ranger>0.25</WH_Sukiradae_Ranger>
-					<WH_Sukiradae_Warlord>0.25</WH_Sukiradae_Warlord>
+					<WH_Sukiradae_Porter>10</WH_Sukiradae_Porter>
+					<WH_Sukiradae_Fighter>5</WH_Sukiradae_Fighter>
+					<WH_Sukiradae_Archer>5</WH_Sukiradae_Archer>
 				</options>
 			</li>
 			<!-- Trader -->
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<Tribal_Trader>1</Tribal_Trader>
+					<WH_Sukiradae_Trader>1</WH_Sukiradae_Trader>
 				</traders>
 				<carriers>
 					<Alpaca>10</Alpaca>
 					<Horse>10</Horse>
 					<Donkey>10</Donkey>
 				</carriers>
-				<options>
+				<guards>
 					<WH_Sukiradae_Villager>5</WH_Sukiradae_Villager>
 					<WH_Sukiradae_Porter>10</WH_Sukiradae_Porter>
-					<WH_Sukiradae_Fighter>5</WH_Sukiradae_Fighter>
-					<WH_Sukiradae_Archer>5</WH_Sukiradae_Archer>
-					<WH_Sukiradae_Warrior>10</WH_Sukiradae_Warrior>
-					<WH_Sukiradae_Militia>7</WH_Sukiradae_Militia>
-				</options>
+					<WH_Sukiradae_Militia>5</WH_Sukiradae_Militia>
+				</guards>
 			</li>
 			<!-- Settlement -->
 			<li>
@@ -207,7 +221,7 @@
 		<defName>WH_SukiradaeTribe</defName>
 		<label>tribal scavengers</label>
 		<description>A loose confederation of tribal scavengers who've agreed to mostly fight outsiders rather than each other. Driven by a blood-and-honor culture, they value personal strength and ruthlessness. In any case, tribal scavengers are a mostly nomadic people who live off the land using primitive tools and weapons.</description>
-		<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+		<factionIconPath>World/WorldObjects/Expanding/Pueblo</factionIconPath>
 		<colorSpectrum>
 			<li>(0.85,0.00,0.25)</li>
 			<li>(0.42,0.05,0.68)</li>
@@ -215,7 +229,7 @@
 	</FactionDef>
 	
 	<ThingSetMakerDef>
-		<defName>SukiradaeRaidLootMaker</defName>
+		<defName>WH_SukiradaeRaidLootMaker</defName>
 		<root Class="ThingSetMaker_MarketValue">
 			<fixedParams>
 				<filter>
@@ -231,7 +245,8 @@
 						<li>Yayo</li>
 						<li>Luciferium</li>
 						<li>Pemmican</li>
-						<li  MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+						<li>Liver</li>
+						<li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
 					</thingDefs>
 				</filter>
 			</fixedParams>
